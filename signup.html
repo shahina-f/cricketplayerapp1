@@ -1,0 +1,42 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+signout
+
+{% endblock title %}
+{% block content %}
+<section>
+    <form method="post" action="{% url 'userdata' %}" >
+        {% csrf_token %}
+    <br>
+     <label for="fname">first name:</label><br>
+     <input type="text" id="fname" name="fname"> <br>
+     <label for="lname">last name:</label> <br>
+     <input type="text" id="lname" name="lname"><br>
+     <label for="email">Email:</label> <br>
+     <input type="email" name="email"> <br>
+     <label for="password">password</label> <br>
+     <input type="password" name="password"><br>
+     <label for="confirmpassword">confirm password</label><br>
+     <input type="text" name="cpassword"> <br><br>
+     <input type="Submit"><br>
+
+
+
+
+
+    </form>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+{% endblock content %}
