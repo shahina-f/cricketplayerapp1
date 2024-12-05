@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+playerlist
+
+{% endblock title %}
+{% block customcss %}
+<link rel="stylesheet" href="{%static "\css\playerlist.css" %}"
+{% endblock customcss %}
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row p-2">
+            <div class="col-md-8">
+                <table border="2">
+                    <tr>
+                        <th>sl.no</th>
+                        <th> playerlist</th>
+                        <th>score</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>{{obj.match.id}}</td>
+                        <td>{{obj.players}}</td>
+                        <td>{{obj.match.score}}</td>
+                    </tr>
+                    
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% endblock content %}

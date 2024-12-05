@@ -1,0 +1,43 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+players
+{% endblock title %}
+{% block customcss %}
+  <link rel="stylesheet" href=" {% static "\css\players.css" %}">
+     
+{% endblock customcss %}
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="row justify-content-center p-2  ">
+            <div class="col-md-8">
+                <table border="1">
+                    <tr>
+                        <th >Match</th>
+                        <th>Team</th>
+                        <th>Over</th>
+                    </tr>
+                    {% for x in obj %}
+                    <tr>
+                    <td> <a href ="playerlist/{{x.id}}">{{x.matches}}</a></td>
+                     <td>{{x.team_won}}</td>
+                    <td>{{x.over}}</td>
+                    </tr>
+                    {% endfor%}
+                    
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+     
+
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+home
+
+{% endblock title %}
+{% block content %}
+<section >
+  <div class="container  ">
+    <div class="row mt-3 p-2 align-item-center">
+        <div class="col-md-4 ">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "\images\images\cricket_14.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"> 2023 Cricket World Cup.One day cricket tournament</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "\images\images\5483.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"> The 2017 ICC .One day cricket tournament.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "\images\images\114.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">T20 world cup</p>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+{% endblock content %}
